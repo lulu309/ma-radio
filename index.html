@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma WebRadio</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        audio {
+            width: 90%;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎶 Écoute Ma Radio</h1>
+        <p>En direct depuis Shoutcast</p>
+        <audio controls autoplay>
+            <source src="http://87.90132.233:8000/stream" type="audio/mpeg">
+            Votre navigateur ne supporte pas la lecture audio.
+        </audio>
+    </div>
+</body>
+</html>
